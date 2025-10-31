@@ -29,13 +29,7 @@ Aplikasi ini menampilkan **emosi, usia, dan gender** secara langsung, serta memu
 
 ---
 
-## 🖼️ Screenshot (Preview)
 
-> *Tambahkan gambar hasil deteksi wajah di sini setelah running:*
-
-![Emotion Detection Preview](docs/screenshot-demo.jpg)
-
----
 
 ## 🧩 System Requirements
 
@@ -52,8 +46,8 @@ Aplikasi ini menampilkan **emosi, usia, dan gender** secara langsung, serta memu
 ## ⚙️ Installation Guide
 
 ### Windows
-```bash
-git clone https://github.com/yourusername/emotion.git
+
+git clone https://github.com/rohbintang/deepfacesadata.git
 cd emotion
 python -m venv venv
 venv\Scripts\activate
@@ -63,9 +57,25 @@ pip install -r requirements.txt
 ### Ubuntu
 sudo apt update
 sudo apt install -y python3.11 python3.11-venv python3-opencv ffmpeg libasound-dev
-git clone https://github.com/yourusername/emotion.git
+git clone https://github.com/rohbintang/deepfacesadata.git
 cd emotion
 python3.11 -m venv venv
 source venv/bin/activate
 pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
+
+### MAC
+brew install python@3.11
+git clone https://github.com/rohbintang/deepfacesadata.git
+cd emotion
+python3.11 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip setuptools wheel
+pip install tensorflow-macos==2.15.0 tensorflow-metal keras==2.15.0
+pip install -r requirements.txt
+
+### Running the App
+
+Setelah environment aktif:
+
+python emotion.py
